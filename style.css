@@ -48,7 +48,7 @@ button:hover{
     display: flex;
     justify-content: center;
 }
-.nav-right-Side>div, .nav-middle-side>div{
+.nav-right-side>div, .nav-middle-side>div{
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 15px;
