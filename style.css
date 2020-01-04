@@ -1,13 +1,25 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-size: 13px;
+    font-size: 15px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 body{
     width: 100%;
     height: 100vh;
+}
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #e7ad44;
+    border: 1px none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #e78844;
 }
 .wrapper{
     width: 100%;
@@ -24,16 +36,26 @@ body{
     padding-right: 15px;
 }
 .nav-left-side{
-    background: url('../image/logo.png') center center no-repeat;
-    background-size: cover;
-
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav-left-side>img{
+    height: 100%;
 }
 .nav-middle-side,.nav-right-Side{
+    position: relative;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
 .nav-right-Side>div, .nav-middle-side>div{
-    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-weight: 700;
+}
+.nav-middle-side>div:hover,.nav-right-side>div:hover{
+    color: #e7ad44;
+    cursor: pointer;
 }
