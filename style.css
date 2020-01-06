@@ -79,6 +79,7 @@ h3{
     width: 100%;
     height: calc(100vh - 80px);
 }
+/* main-section-1 */
 .main-section-1,.main-section-3{
     margin: 0em;
 }
@@ -92,13 +93,13 @@ h3{
     font-weight: 700;
     font-family: 'Sawarabi Mincho', sans-serif;
 }
+/* .main-section-2 */
 .main-section-2-title>span{
     font-size: 25px;
     font-weight: 600;
 }
 .main-section-2-content{
     padding-top: 30px;
-    /* padding-bottom: 50px; */
     display: flex;
     justify-content: space-between;
 }
@@ -107,14 +108,69 @@ h3{
     padding-left: 0px;
     padding-bottom: 50px;
 }
+/* main section 3 */
 .main-section-3{
     display: flex;
     justify-content: space-around;
 }
 .box{
     width: 25%;
-    height: 300px;
-    border: 1px solid;
+    height: 370px;
+    position: relative;
+}
+.view {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    float: left;
+    border: 0px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff no-repeat center center
+}
+
+.view img {
+    display: block;
+    position: relative;
+    filter: contrast(0.4);
+}
+
+.view-first img {
+    transition: all 0.2s linear;
+    width: 100%;
+}
+
+.view-first:hover  img  {
+    transform : scale(1.1) ;
+ }
+.image-text{
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    bottom: auto !important;
+    z-index: 16;
+    left: 0;
+    right: 0;
+}
+.box-content{
+    width: 100%;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-content>h4{
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+
 }
 /* tamp */
 html{
