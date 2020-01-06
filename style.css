@@ -199,3 +199,6 @@ section{
 .room-img:hover{
     filter: brightness(50%);
 }
+.footer-logo{
+    width: 50%;
+}
