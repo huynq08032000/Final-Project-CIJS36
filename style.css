@@ -188,6 +188,7 @@ html{
 }
 .gioithieu-footer-1-lienhe > *{
     list-style: none;
+    line-height: 30px;
 }
 .gioithieu-height{
     line-height: 25px;
@@ -219,8 +220,11 @@ html{
 .room-wapper > *{
     padding-bottom: 20px;
 }
+.room-wapper > div{
+    text-indent: 20px;
+}
 .room-wapper > p{
-    text-indent: 15px;
+    text-indent: 10px;
 }
 .room-gach{
     position: relative;
@@ -246,4 +250,11 @@ html{
 .a:hover{
     color: #e7ad44;
     text-decoration: none;
+}
+.ul{
+    list-style: none;
+    text-indent: 10px;
+}
+.ul > li{
+    line-height: 25px;
 }
