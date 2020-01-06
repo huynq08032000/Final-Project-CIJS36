@@ -159,6 +159,7 @@ section{
 }
 .gioithieu-height{
     line-height: 25px;
+    padding-right: 30px;
 }
 .gioithieu-btn{
     text-decoration: none;
@@ -170,6 +171,9 @@ section{
     padding-top: 5px;
     color: white;
     font-weight: 500;
+}
+.gioithieu-btn:hover{
+    text-decoration: none;
 }
 /* room */
 .room-img{
@@ -202,4 +206,12 @@ section{
 }
 .footer-logo{
     width: 50%;
+}
+.a{
+    color: gray;
+    cursor: pointer;
+}
+.a:hover{
+    color: #e7ad44;
+    text-decoration: none;
 }
