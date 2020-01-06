@@ -244,9 +244,11 @@ html{
 }
 .gioithieu-footer-1-lienhe > *{
     list-style: none;
+    line-height: 30px;
 }
 .gioithieu-height{
     line-height: 25px;
+    padding-right: 30px;
 }
 .gioithieu-btn{
     text-decoration: none;
@@ -258,6 +260,9 @@ html{
     padding-top: 5px;
     color: white;
     font-weight: 500;
+}
+.gioithieu-btn:hover{
+    text-decoration: none;
 }
 /* room */
 .room-img{
@@ -271,8 +276,11 @@ html{
 .room-wapper > *{
     padding-bottom: 20px;
 }
+.room-wapper > div{
+    text-indent: 20px;
+}
 .room-wapper > p{
-    text-indent: 15px;
+    text-indent: 10px;
 }
 .room-gach{
     position: relative;
@@ -290,4 +298,19 @@ html{
 }
 .footer-logo{
     width: 50%;
+}
+.a{
+    color: gray;
+    cursor: pointer;
+}
+.a:hover{
+    color: #e7ad44;
+    text-decoration: none;
+}
+.ul{
+    list-style: none;
+    text-indent: 10px;
+}
+.ul > li{
+    line-height: 25px;
 }
