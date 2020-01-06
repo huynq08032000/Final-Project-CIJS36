@@ -168,7 +168,8 @@ section{
     height: auto;
     max-height: 980px;
     padding: 30px 10%;
-    background: grey;
+    background: #ebe8e7;
+    color: gray;
     display: inline-block;
 }
 .gioithieu-footer-1 > *{
@@ -219,4 +220,7 @@ section{
 }
 .room-img:hover{
     filter: brightness(50%);
+}
+.footer-logo{
+    width: 50%;
 }
