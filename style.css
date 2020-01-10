@@ -30,6 +30,11 @@ button:hover{
 i:hover{
     cursor: pointer;
 }
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
 h3{
     font-size: 40px;
     font-weight: 900;
@@ -79,6 +84,9 @@ h3{
 .nav-detail>button{
     font-weight: 700;
     color: #ffffff;
+}
+.icon{
+    display: none;
 }
 /* main trang chủ*/
 .main-trang-chu{
@@ -359,6 +367,7 @@ html{
     z-index: 9999;
 }
 .messenger-container{
+    display: none;
     height: 40vh;
     background-color: #ffffff;
 }
@@ -448,5 +457,41 @@ html{
     }
     .current-conversation{
         height: calc(60vh - 40px);
+    }
+    .header-nav.responsive {position: relative;}
+    .header-nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-middle-side>* {
+        display: none;
+    }
+    .nav-right-side>*{
+        display: none;
+    }
+    .icon{
+        position: relative;
+        display: block;
+    }
+    .nav-responsive{
+        display: none;
+        width: 100%;
+        background-color: #333333;
+        position: absolute;
+        z-index: 9999;
+    }
+    .nav-responsive>*{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    a:hover{
+        color: #4482ff;
+        text-emphasis: underline;
+    }
+    .messenger{
+        top: 25%;
     }
 }
