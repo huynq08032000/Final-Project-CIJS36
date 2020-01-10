@@ -314,3 +314,27 @@ html{
 .ul > li{
     line-height: 25px;
 }
+/* booked */
+.booked-wapper>*{
+    margin-bottom: 20px;
+}
+.booked-line{
+    width: 100%;
+    border: 1px solid gray;
+}
+.booked-line>*{
+    display: block;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 40px;
+
+}
+.booked-line > input{
+    box-shadow: 1px -1px 5px gray;
+    text-indent: 10px;
+}
+.slider{
+    height: 500px;
+}
