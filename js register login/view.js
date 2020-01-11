@@ -27,26 +27,35 @@ view.showComponents = function(name) {
           password: form.password.value,
           confirmPassword: form.comfirmPassword.value
         }
-
-        view.validate(registerInfo.firstname, 'firstname-error', 'Invalid firstname!')
-        view.validate(registerInfo.lastname, 'lastname-error', 'Invalid lastname!')
-        view.validate(
-          registerInfo.email && registerInfo.email.includes('@'),
-          'email-error',
-          'Invalid email!'
-        )
-        view.validate(
-          registerInfo.password && registerInfo.password.length >= 6,
-          'password-error',
-          'Invalid password!'
-        )
-        view.validate(
-          registerInfo.confirmPassword
-          && registerInfo.confirmPassword.length >= 6
-          && registerInfo.password == registerInfo.confirmPassword,
-          'comfirm-password-error',
-          'Invalid confirm password!'
-        )
+        let validateResult = [
+          view.validate(registerInfo.firstname, 'firstname-error', 'Invalid firstname!'),
+          view.validate(registerInfo.lastname, 'lastname-error', 'Invalid lastname!'),
+          view.validate(
+            registerInfo.email && registerInfo.email.includes('@'),
+            'email-error',
+            'Invalid email!'
+          ),
+          view.validate(
+            registerInfo.password && registerInfo.password.length >= 6,
+            'password-error',
+            'Invalid password!'
+          ),
+          view.validate(
+            registerInfo.confirmPassword
+            && registerInfo.confirmPassword.length >= 6
+            && registerInfo.password == registerInfo.confirmPassword,
+            'comfirm-password-error',
+            'Invalid confirm password!'
+          )
+        ]
+        if(allPassed(validateResult)) {
+          for(let result of validateResult){
+            if(!result){
+              return false
+            }
+          }
+          return true
+        }
       
       }
       break
@@ -72,16 +81,23 @@ view.showComponents = function(name) {
           email: form.email.value,
           password: form.password.value
         }
-        view.validate(
-          logInInfo.email && logInInfo.email.includes('@'),
-          'email-error',
-          'Invalid email!'
-        )
-        view.validate(
-          logInInfo.password && logInInfo.password.length >= 6,
-          'password-error',
-          'Invalid password!'
-        )
+        let validateResult=[
+          view.validate(
+            logInInfo.email && logInInfo.email.includes('@'),
+            'email-error',
+            'Invalid email!'
+          ),
+          view.validate(
+            logInInfo.password && logInInfo.password.length >= 6,
+            'password-error',
+            'Invalid password!'
+          )
+        ]
+
+        if(allPassed(validateResult)){
+          AbortController.logIn(logInInfo)
+        }
+   
         
       }
       break
@@ -96,7 +112,9 @@ view.setText = function(id, text) {
 view.validate = function(condition, idErrorTag, messageError) {
   if(condition) {
     view.setText(idErrorTag, '')
+    return true
   } else {
     view.setText(idErrorTag, messageError)
+    return false
   }
 }
