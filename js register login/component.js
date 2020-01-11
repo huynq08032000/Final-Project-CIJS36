@@ -5,7 +5,7 @@ components.register=`
     <img style="width: 100%; height: 250px;" src="nha-hang-1-768x410.jpg" alt="">
     </div>
     <div class="welcome">
-    <div class="register-1" >
+    <div class="register-login" >
     <span>Chào mừng đến với</span>  
     </div> 
     <div>
@@ -48,7 +48,7 @@ components.register=`
     </div>
     </form>
     <div class="lienhe">
-    <div class="register-1" >
+    <div class="register-login" >
     <span>Hoặc liên hệ trực tiếp</span>  
     </div>
     <div> 

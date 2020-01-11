@@ -467,8 +467,9 @@ button:disabled{
 .p{
     margin-top: 10px;
     color: #a59b9b;
-/* =======
-.messenger{ */
+}
+ /* ======= */
+.messenger { 
     position: fixed;
     top: 50%;
     left: 10px;
