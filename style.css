@@ -664,7 +664,19 @@ button:disabled {
 .room-booked-info {
     display: flex;
 }
+<<<<<<< HEAD
 
+=======
+.booked-input{
+    display: flex;
+}
+.booked-cmt{
+    display: flex;
+    max-height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+>>>>>>> e28a2b31ec1d14e3139c1637d16b7d6f685300f2
 @media only screen and (max-width: 600px) {
     .main-section-1-content {
         top: 41%;
