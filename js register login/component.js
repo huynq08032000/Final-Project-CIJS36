@@ -52,9 +52,11 @@ components.register=`
     <span>Hoặc liên hệ trực tiếp</span>  
     </div>
     <div> 
+    <div class="p">
     <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
-    <p>Phone: 076 922 0162</p>
-    <p>Email: demonhunterg@gmail.com</p>
+    <p>Phone: <a href="#" class ="a"> 076 922 0162</a></p>
+    <p>Email: <a href="#" class ="a"> demonhunterg@gmail.com</a></p>
+    </div>
     <div class="btn-icon">
     <i class="fab fa-facebook"></i>
     <i class="fab fa-instagram"></i>
@@ -101,10 +103,10 @@ components.logIn =`
     <span>Hoặc liên hệ trực tiếp</span>  
     </div>
     <div> 
-        <div class="p">
+    <div class="p">
     <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
-    <p>Phone: <a href="#"> 076 922 0162</a></p>
-    <p>Email: <a href="#"> demonhunterg@gmail.com</a></p>
+    <p>Phone: <a href="#" class ="a"> 076 922 0162</a></p>
+    <p>Email: <a href="#" class ="a"> demonhunterg@gmail.com</a></p>
     </div>
     <div class="btn-icon">
     <i class="fab fa-facebook"></i>
