@@ -104,6 +104,13 @@ view.showComponents = function(name) {
                 }
                 break
             }
+            case `trangChu`:{
+                let app = document.getElementById('app')
+                app.innerHTML = components.header + components.main + components.footer 
+                // + components.messenger
+                
+                break
+            }
     }
 }
 

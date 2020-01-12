@@ -504,7 +504,7 @@ a:hover {
     text-decoration: underline;
 }
 
-button {
+/* button {
     width: 120px;
     height: 38px;
     padding: 10px;
@@ -515,7 +515,7 @@ button {
 
 button:hover {
     cursor: pointer;
-}
+} */
 
 button:disabled {
     background: #f2f2f2;
@@ -567,7 +567,9 @@ button:disabled {
     margin-top: 10px;
     color: #a59b9b;
 }
-
+.message-error {
+    color: red;
+}
 
 /* ======= */
 
@@ -664,9 +666,7 @@ button:disabled {
 .room-booked-info {
     display: flex;
 }
-<<<<<<< HEAD
 
-=======
 .booked-input{
     display: flex;
 }
@@ -676,7 +676,6 @@ button:disabled {
     margin-top: 10px;
     margin-bottom: 10px;
 }
->>>>>>> e28a2b31ec1d14e3139c1637d16b7d6f685300f2
 @media only screen and (max-width: 600px) {
     .main-section-1-content {
         top: 41%;
@@ -731,9 +730,14 @@ button:disabled {
         width: 100%;
         text-align: center;
     }
-    a:hover {
+    .nav-responsive span{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .nav-responsive span:hover {
         color: #4482ff;
         text-emphasis: underline;
+        cursor: pointer;
     }
     .messenger {
         top: 25%;
