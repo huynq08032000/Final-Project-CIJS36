@@ -49,12 +49,7 @@ view.showComponents = function(name) {
           )
         ]
         if(allPassed(validateResult)) {
-          for(let result of validateResult){
-            if(!result){
-              return false
-            }
-          }
-          return true
+          controller.register(registerInfo)
         }
       
       }
@@ -95,7 +90,7 @@ view.showComponents = function(name) {
         ]
 
         if(allPassed(validateResult)){
-          AbortController.logIn(logInInfo)
+          controller.logIn(logInInfo)
         }
    
         
@@ -117,4 +112,20 @@ view.validate = function(condition, idErrorTag, messageError) {
     view.setText(idErrorTag, messageError)
     return false
   }
+}
+view.disable = function(id){
+    document.getElementById(id).setAttribute('disabled', true)
+}
+view.enable = function(id){
+  document.getElementById(id).removeAttribute('disabled')
+}
+
+
+function allPassed(validateResult){
+  for(let result of validateResult){
+    if(!result){
+      return false
+    }
+  }
+  return true
 }

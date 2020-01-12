@@ -411,21 +411,22 @@ a:hover {
     text-decoration: underline;
   }
   
-button {
+.form-footer button {
     width: 120px;
-    height: 38px;
+    max-height: 45px;
+    line-height: 15px;
     padding: 10px;
     border-radius: 5px;
     color: #ffffff;
     background: goldenrod;
   }
   
-button:hover {
+.form-footer button:hover {
     cursor: pointer;
   }
   
-button:disabled{
-    background: #f2f2f2;
+.form-footer button:disabled{
+    background: #5f5d5d;
   }
 .btn-icon> i{
     width: 30px;
@@ -467,6 +468,14 @@ button:disabled{
 .p{
     margin-top: 10px;
     color: #a59b9b;
+}
+.message-error{
+    color: #ff0000;
+    line-height: 25px;
+}
+.message-success{
+    color: #00ff00;
+    line-height: 25px;
 }
  /* ======= */
 .messenger { 

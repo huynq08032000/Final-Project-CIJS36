@@ -30,17 +30,19 @@ components.register=`
             </div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email">
             <div id="email-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
             <div id="password-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="comfirmPassword" placeholder="Comfirm password">
+            <input type="password" name="comfirmPassword" placeholder="Comfirm password">
             <div id="comfirm-password-error" class="message-error"></div>
         </div>
+            <div id="register-error" class="message-error"></div>
+            <div id="register-success" class="message-success"></div>
     </div>
     <div class="form-footer">
         <a id="register-link" href="#">Đã có tài khoản? Đăng nhập</a>
@@ -85,13 +87,14 @@ components.logIn =`
         <h3>Mount Hotel</h3>
     </div>
     <div class="form-content">
-            <input type="text" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email">
             <div id="email-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
             <div id="password-error" class="message-error"></div>
         </div>
+        <div id="log-in-error" class="message-error"></div>
     </div>
     <div class="form-footer">
         <a id="log-in-link" href="#">Chưa có tài khoản? Đăng kí</a>
