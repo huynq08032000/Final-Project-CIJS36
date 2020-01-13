@@ -41,6 +41,10 @@ components.register=`
             <input type="password" name="comfirmPassword" placeholder="Comfirm password">
             <div id="comfirm-password-error" class="message-error"></div>
         </div>
+        <div>
+            <div id="register-error" class="message-error"></div>
+            <div id="register-success" class="message-success"></div>
+        </div?
     </div>
     <div class="form-footer">
         <a id="register-link" href="#">Đã có tài khoản? Đăng nhập</a>
@@ -92,7 +96,11 @@ components.logIn =`
             <input type="password" name="password" placeholder="Password">
             <div id="password-error" class="message-error"></div>
         </div>
+        <div>
+            <div id="log-in-error" class="message-error"></div>
+        </div?
     </div>
+        
     <div class="form-footer">
         <a id="log-in-link" href="#">Chưa có tài khoản? Đăng kí</a>
         <button id="log-in-submit-btn" type="submit">Đăng nhập</button>
