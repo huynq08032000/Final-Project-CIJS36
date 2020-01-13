@@ -44,23 +44,20 @@ view.showComponents = function(name) {
                         view.validate(
                             registerInfo.confirmPassword &&
                             registerInfo.confirmPassword.length >= 6 &&
-                            registerInfo.password == registerInfo.confirmPassword,
+                            registerInfo.password === registerInfo.confirmPassword,
                             'comfirm-password-error',
                             'Invalid confirm password!'
                         )
                     ]
                     if (allPassed(validateResult)) {
-                        for (let result of validateResult) {
-                            if (!result) {
-                                return false
-                            }
+                            console.log("OK")
+                            controller.register(registerInfo)
                         }
-                        return true
                     }
+                    break
 
                 }
-                break
-            }
+                
         case 'logIn':
             {
                 let app = document.getElementById('app')
@@ -97,7 +94,7 @@ view.showComponents = function(name) {
                     ]
 
                     if (allPassed(validateResult)) {
-                        AbortController.logIn(logInInfo)
+                        controller.logIn(logInInfo)
                     }
 
 
@@ -114,16 +111,29 @@ view.showComponents = function(name) {
     }
 }
 
-view.setText = function(id, text) {
-    document.getElementById(id).innerText = text
+view.setText = function(id,text){
+    document.getElementById(id).innerText=text
 }
-
-view.validate = function(condition, idErrorTag, messageError) {
-    if (condition) {
-        view.setText(idErrorTag, '')
+view.validate= function(condition,idErrorTag,messageError){
+    if(condition){
+        view.setText(idErrorTag,'')
         return true
-    } else {
-        view.setText(idErrorTag, messageError)
+    } else{
+        view.setText(idErrorTag,messageError)
         return false
     }
+}
+view.disable= function(id){
+    document.getElementById(id).setAttribute("disabled",true)
+}
+view.enable = function(id){
+    document.getElementById(id).removeAttribute("disabled")
+}
+function allPassed(validateResult){
+    for(let result of validateResult){
+        if (!result){
+            return false
+        }
+    }
+    return true
 }

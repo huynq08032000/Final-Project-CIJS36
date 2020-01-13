@@ -11,6 +11,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCxxfYJZDDFGxmWcqVswsbVG8v7ROkaezo",
+        authDomain: "ci-js-36.firebaseapp.com",
+        databaseURL: "https://ci-js-36.firebaseio.com",
+        projectId: "ci-js-36",
+        storageBucket: "ci-js-36.appspot.com",
+        messagingSenderId: "551029176861",
+        appId: "1:551029176861:web:a244c7bf7d0be3ecf9a4f4",
+        measurementId: "G-WCD83B8TCY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./js/component.js"></script>
@@ -24,7 +47,7 @@
 
 <body>
     <div id="app"></div>
-      
+    
     </div>
 
 </body>

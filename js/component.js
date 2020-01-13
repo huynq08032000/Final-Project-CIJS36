@@ -34,11 +34,11 @@ components.register=`
             <div id="email-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
             <div id="password-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="comfirmPassword" placeholder="Comfirm password">
+            <input type="password" name="comfirmPassword" placeholder="Comfirm password">
             <div id="comfirm-password-error" class="message-error"></div>
         </div>
     </div>
@@ -89,7 +89,7 @@ components.logIn =`
             <div id="email-error" class="message-error"></div>
         </div>
         <div class="input-wraper">
-            <input type="text" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password">
             <div id="password-error" class="message-error"></div>
         </div>
     </div>
