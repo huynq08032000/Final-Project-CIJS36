@@ -14,6 +14,7 @@ controller.register = async function(registerInfo){
         })
         await firebase.auth().currentUser.sendEmailVerification()
         view.setText('register-success','Mời xác nhận email')
+        firebase.auth().signOut()
     }
     catch(err)
     {
