@@ -697,15 +697,24 @@ button:disabled {
     display: flex;
 }
 
+<<<<<<< HEAD
 .booked-input{
+=======
+.booked-input {
+>>>>>>> 97412081d45c9117fbee423a448c18928e1711c6
     display: flex;
 }
-.booked-cmt{
+
+.booked-cmt {
     display: flex;
     max-height: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 97412081d45c9117fbee423a448c18928e1711c6
 @media only screen and (max-width: 600px) {
     .main-section-1-content {
         top: 41%;
