@@ -697,11 +697,10 @@ button:disabled {
     display: flex;
 }
 
-<<<<<<< HEAD
+
 .booked-input{
-=======
-.booked-input {
->>>>>>> 97412081d45c9117fbee423a448c18928e1711c6
+
+
     display: flex;
 }
 
@@ -711,10 +710,7 @@ button:disabled {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 97412081d45c9117fbee423a448c18928e1711c6
 @media only screen and (max-width: 600px) {
     .main-section-1-content {
         top: 41%;
@@ -782,16 +778,22 @@ button:disabled {
         top: 25%;
     }
     /* >>>>>>> 5b35eff936edd6d87452e92f18abf27e87f94bdf */
-}
+
 
 
 /* nav_under */
+.nav-under{
+    width: 100%;
+    height: 100vh;
+}
 
-.nav-under-container,
-.nav-under-button {
+.nav-under-container .nav-under-button {
     display: inline-block;
 }
 
+
+
 .nav-under-content {
-    margin: 40px 30px 30px;
+    margin: 40px 30px 30px ;
 }
+

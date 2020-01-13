@@ -1,11 +1,11 @@
 const view = {
-    currentComponent = null
+    // currentComponent = null
 }
 
 console.log("sssssss")
 
 view.showComponents = function(name) {
-    view.currentComponent = name
+    // view.currentComponent = name
     switch (name) {
         case 'adminAddRoom':
             {
@@ -35,8 +35,8 @@ view.showComponents = function(name) {
                 function addCarrouselsClickHandler() {
                     adminView.showComponents('adminCarrousels')
                 }
-
             }
+            break
         case 'adminBookingProcess':
             {
                 let app = document.getElementById('app')
@@ -45,6 +45,7 @@ view.showComponents = function(name) {
                 let signOutBtn = document.getElementById('sign-out')
                 signOutBtn.onclick = () => firebase.auth().signOut()
             }
+            break
         case 'users':
             {
                 let app = document.getElementById('app')
@@ -53,7 +54,8 @@ view.showComponents = function(name) {
                 let signOutBtn = document.getElementById('sign-out')
                 signOutBtn.onclick = () => firebase.auth().signOut()
             }
-        case 'adminCarrousels':
+            break    
+        case 'carrousels':
             {
                 let app = document.getElementById('app')
                 app.innerHTML = components.nav + components.carrousels
@@ -61,5 +63,6 @@ view.showComponents = function(name) {
                 let signOutBtn = document.getElementById('sign-out')
                 signOutBtn.onclick = () => firebase.auth().signOut()
             }
+            break    
     }
 }

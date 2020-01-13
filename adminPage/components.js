@@ -1,22 +1,23 @@
-const components {}
+const components = {}
+
 components.nav = `
-<nav class="header-nav">
-                <!-- Left Side -->
-                <div class="nav-left-side nav-left-side1">
-                    <img src="./image/logo.png" alt="Mount Hotel" style="cursor: pointer;">
-                </div>
-                <!-- Right Side -->
+<header style="height:80px;">
+<nav class="header-nav" id="header-nav">
+    <!-- Left Side -->
+    <div class="nav-left-side">
+       <img onclick="view.showComponents('trangChu')" src="./image/logo.png" alt="Mount Hotel" style="cursor: pointer;">
+    </div>
+    <!-- Right Side -->
                 <div class="nav-middle-side">
-                    <div id="add-room" class="nav-detail">Add new offer</div>
-                    <div id="booking" class="nav-detail">Booking process</div>
-                    <div id="users-edit" class="nav-detail">Users</div>
-                    <div id="add-carrousels" class="nav-detail">Carrousels</div>
-                    <div id="sign-out" class="nav-detail">Log out</div>
-                </div>
-
-
+                <div onclick="view.showComponents('adminAddRoom')" id="add-room" class="nav-detail">Add new offer</div>
+                <div onclick="view.showComponents('adminBookingProcess')" id="booking" class="nav-detail">Booking process</div>
+                <div onclick="view.showComponents('users')" id="users-edit" class="nav-detail">Users</div>
+                <div onclick="view.showComponents('carrousels')" id="add-carrousels" class="nav-detail">Carrousels</div>
+                <div id="sign-out" class="nav-detail">Log out</div>
+            </div>
             </nav>
-`
+   `
+
 components.addRoom = `
 <div class="nav-under">
             <div class="nav-under-container">
@@ -40,7 +41,7 @@ components.bookingProcess = `
             <hr class="soft">
         </div>
 `
-adminComponents.users = `
+components.users = `
 <div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Users</h1>
@@ -49,7 +50,7 @@ adminComponents.users = `
         </div>
 `
 
-adminComponents.carrousels = `
+components.carrousels = `
 <div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Carrousels</h1>
