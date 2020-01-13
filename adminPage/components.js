@@ -1,23 +1,24 @@
-const components = {}
-
-components.adminNav = `<nav class="header-nav">
+const components {}
+components.nav = `
+<nav class="header-nav">
                 <!-- Left Side -->
                 <div class="nav-left-side nav-left-side1">
                     <img src="./image/logo.png" alt="Mount Hotel" style="cursor: pointer;">
                 </div>
                 <!-- Right Side -->
                 <div class="nav-middle-side">
-                    <div class="nav-detail">Add new offer</div>
-                    <div class="nav-detail">Booking process</div>
-                    <div class="nav-detail">Users</div>
-                    <div class="nav-detail">Carrousels</div>
-                    <div class="nav-detail">Log out</div>
+                    <div id="add-room" class="nav-detail">Add new offer</div>
+                    <div id="booking" class="nav-detail">Booking process</div>
+                    <div id="users-edit" class="nav-detail">Users</div>
+                    <div id="add-carrousels" class="nav-detail">Carrousels</div>
+                    <div id="sign-out" class="nav-detail">Log out</div>
                 </div>
 
 
-            </nav>`
-
-components.adminAddNewRoom = `<div class="nav-under">
+            </nav>
+`
+components.addRoom = `
+<div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Add new offer</h1>
             </div>
@@ -25,9 +26,11 @@ components.adminAddNewRoom = `<div class="nav-under">
                 <button class="button"><i class="fas fa-plus"></i></button>
             </div>
             <hr class="soft">
-        </div>`
+        </div>
+`
 
-components.adminBookingProcess = `<div class="nav-under">
+components.bookingProcess = `
+<div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Booking process</h1>
             </div>
@@ -35,9 +38,9 @@ components.adminBookingProcess = `<div class="nav-under">
                 <button class="button"><i class="fas fa-plus"></i></button>
             </div>
             <hr class="soft">
-        </div>`
-
-components.adminUsers = `
+        </div>
+`
+adminComponents.users = `
 <div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Users</h1>
@@ -46,7 +49,7 @@ components.adminUsers = `
         </div>
 `
 
-components.adminCarrousel = `
+adminComponents.carrousels = `
 <div class="nav-under">
             <div class="nav-under-container">
                 <h1 class="nav-under-content">Carrousels</h1>
