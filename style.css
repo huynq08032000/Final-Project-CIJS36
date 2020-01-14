@@ -101,6 +101,9 @@ h3 {
     color: #e7ad44;
     cursor: pointer;
 }
+.nav-detail{
+    position: relative;
+}
 
 .nav-detail>button {
     font-weight: 700;
