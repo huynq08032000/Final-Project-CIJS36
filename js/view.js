@@ -1,12 +1,15 @@
 // save all UI logic
-const view = {}
+const view = {
+    // currentComponent: null
+}
 
 view.showComponents = function(name) {
     switch (name) {
         case 'register':
             {
+                // view.currentComponent = name
                 let app = document.getElementById('app')
-                app.innerHTML = components.register
+                app.innerHTML =  components.register 
 
                 let link = document.getElementById('register-link')
                 link.onclick = registerLinkCLickHandler
@@ -54,6 +57,7 @@ view.showComponents = function(name) {
                             controller.register(registerInfo)
                         }
                     }
+        
                     break
 
                 }
@@ -96,20 +100,89 @@ view.showComponents = function(name) {
                     if (allPassed(validateResult)) {
                         controller.logIn(logInInfo)
                     }
-
-
                 }
+            
                 break
             }
-            case `trangChu`:{
+            case 'trangChu': {
+      
                 let app = document.getElementById('app')
-                app.innerHTML = components.header + components.main + components.footer 
-                // + components.messenger
+                app.innerHTML = components.header + components.trangChu  + components.footer  + components.chat
+          
+                let icon = document.getElementById("icon")
+                icon.onclick = () => {
+                    if (document.getElementsByClassName("nav-responsive")[0].style.display === "none") {
+                        document.getElementsByClassName("nav-responsive")[0].style.display = "block"
+                    } else {
+                        document.getElementsByClassName("nav-responsive")[0].style.display = "none"
+                    }
+                }
                 
+                view.toggleUserMenu()
+                view.quickChat()
+                
+              break
+              }
+              case 'gioiThieu': {
+                let app =document.getElementById('app')
+                app.innerHTML = components.header +components.gioiThieu + components.footer + components.chat
+                
+                view.toggleUserMenu()
+                view.quickChat()
+                
+              break
+              }
+              case 'roomBooked': {
+                let app = document.getElementById('app')
+                app.innerHTML =components.header+ components.roomBooked + components.footer + components.chat
+                
+                view.toggleUserMenu()
+                view.quickChat()
+              
+              break
+              }
+              case 'roomBookedInfo': {
+                let app = document.getElementById('app')
+                app.innerHTML =components.header+ components.roomBookedInfo + components.footer + components.chat
+                
+                view.toggleUserMenu()
+                view.quickChat()
+              
                 break
+              }
+              case 'room': {
+                let app = document.getElementById('app')
+                app.innerHTML =components.header+ components.room+ components.footer + components.chat
+              
+                view.toggleUserMenu()
+                view.quickChat()
+          
+                break
+              }
             }
     }
-}
+
+    view.toggleUserMenu = function(){
+        let userMenu = document.getElementById('user-menu')
+        userMenu.onclick = function(){
+          let menuToggle = this.getAttribute('menu-toggle')
+          menuToggle = (menuToggle == 'none') ? 'block' : 'none'
+          this.setAttribute('menu-toggle', menuToggle)
+          document.getElementsByClassName('khung-menu')[0].style.display = menuToggle
+        }
+      }
+      
+      view.quickChat = function(){
+        let openMess = document.getElementById("openMess")
+        openMess.onclick = () => {
+            document.getElementsByClassName("messenger-container")[0].style.display = "block"
+        }
+        let closeMess = document.getElementById("closeMess")
+        closeMess.onclick = () => {
+            document.getElementsByClassName('messenger-container')[0].style.display = "none"
+        }
+      }
+
 
 view.setText = function(id,text){
     document.getElementById(id).innerText=text

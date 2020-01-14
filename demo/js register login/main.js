@@ -9,4 +9,5 @@ function init() {
             view.showComponents('register')
         }
     }) 
+    
 }

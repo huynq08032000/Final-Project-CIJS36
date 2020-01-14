@@ -110,7 +110,15 @@ h3 {
 .icon {
     display: none;
 }
-
+.khung-menu{
+    position: absolute;
+    right: 0px;
+    margin-top: 5px;
+    padding: 10px;
+    background: white;
+    z-index: 10;
+    display: none;
+}
 
 /* main trang chủ*/
 
@@ -407,7 +415,9 @@ html {
 .room-wapper>p {
     text-indent: 10px;
 }
-
+.room-wapper > p a:hover{
+    cursor: pointer;
+}
 .room-gach {
     position: relative;
     padding-top: 30px;
